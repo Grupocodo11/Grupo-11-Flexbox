@@ -1,0 +1,117 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+body
+{
+    background-image: url(fondo.jpg); background-size: cover;
+}
+
+header
+{
+    width: 100%;
+    height: 20%;
+}
+
+h5, a:active
+{
+    text-align: center;
+    color: white;
+    background-color: yellow;
+
+}
+
+h1
+{
+  font-size: 80px;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+}
+
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.caja
+{
+    border: 2px solid white;
+    color: cyan;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+   
+}
+
+.baul
+{
+    width: 200px;
+    height: 260px;
+    text-align: left;
+    margin: 10px;
+}
+
+p
+{
+color: white;
+font-size: 18px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+img
+{
+    width: 200px;
+    height: 235px;
+}
+
+footer
+{
+    width: 100%;
+    height: 10%;
+}
+
+
+@media (max-width: 768px)
+{
+    h1
+    {
+        font-size: 40px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .caja
+    {
+        width: 150px;
+        height: 200px; 
+    }
+
+    .baul
+    {
+        width: 150px;
+        height: 200px; 
+    }
+
+    p 
+    {
+        font-size: 15px;
+    }
+
+    img 
+    {
+        width: 150px;
+        height: 185px;
+    }
+}
+
