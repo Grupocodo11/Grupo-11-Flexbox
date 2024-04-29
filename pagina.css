@@ -1,117 +1,175 @@
-*
-{
-    margin: 0%;
-    padding: 0%;
-}
-
-body
-{
-    background-image: url(fondo.jpg); background-size: cover;
-}
-
-header
-{
-    width: 100%;
-    height: 20%;
-}
-
-h5, a:active
-{
-    text-align: center;
-    color: white;
-    background-color: yellow;
+* {
+  margin: 0;
+  padding: 0;
 
 }
 
-h1
-{
-  font-size: 80px;
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body {
+  background: rgb(175, 238, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 111, 1) 0%,
+    rgba(175, 238, 255, 1) 100%
+  );
+
+  min-height: 100vh;
+  position: relative;
+
+  /* background-image: url(fondo.jpg); background-size: cover; */
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  /* height: 20%; */
+  padding: 20px 0;
+}
+
+h5,
+a:active {
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+  color: white;
+  background-color: yellow;
 }
 
+h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
 
-.flex-container
-{
+.flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    max-width: 90%;
 }
 
-
-.caja
-{
-    border: 2px solid white;
-    color: cyan;
-    width: 200px;
-    height: 250px;
-    margin: 10px;
-   
+.caja {
+  /* border: 2px solid white; */
+  /* color: cyan; */
+  /* height: 250px; */
+  padding: 5px;
 }
 
-.baul
-{
-    width: 200px;
-    height: 260px;
+.baul {
+  /* width: 20%; */
+  /* height: 260px; */
+  text-align: left;
+  padding: 5px;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+img {
+  /* width: 200px;
+  height: 235px; */
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 10%; */
+  text-align: center;
+
+}
+
+footer p {
+  padding: 10px 0;
+
+}
+
+footer span {
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 60px;
     text-align: left;
-    margin: 10px;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .caja {
+    /* border: 2px solid white; */
+    /* color: cyan; */
+    width: 50%;
+    /* height: 250px; */
+    /* margin: 10px; */
+  }
+  
+  .baul {
+    width: 50%;
+    /* height: 260px; */
+    text-align: left;
+  }
+
 }
 
-p
-{
-color: white;
-font-size: 18px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@media (min-width: 770px) {
+    h1 {
+      text-align: center;
+      
+    }
 
-}
-
-
-
-img
-{
-    width: 200px;
-    height: 235px;
-}
-
-footer
-{
-    width: 100%;
-    height: 10%;
-}
-
-
-@media (max-width: 768px)
-{
-    h1
-    {
-        font-size: 40px;
-        text-align: left;
+    .caja {
+        width: 25%;
+    }
+    .baul {
+        width: 25%;
     }
 }
 
-@media (max-width: 768px)
-{
-    .caja
-    {
-        width: 150px;
-        height: 200px; 
-    }
-
-    .baul
-    {
-        width: 150px;
-        height: 200px; 
-    }
-
-    p 
-    {
-        font-size: 15px;
-    }
-
-    img 
-    {
-        width: 150px;
-        height: 185px;
-    }
+@media (min-width: 1440px) {
+  .caja {
+    width: 15%;
+}
+.baul {
+    width: 15%;
+}
 }
 
+
+
+/* @media (max-width: 768px) {
+  .caja {
+    width: 150px;
+    height: 200px;
+
+  }
+
+  .baul {
+    width: 150px;
+    height: 200px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  img {
+    width: 150px;
+    height: 185px;
+  }
+} */
